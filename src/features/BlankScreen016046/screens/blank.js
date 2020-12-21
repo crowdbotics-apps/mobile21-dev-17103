@@ -32,7 +32,7 @@ export default class Blank extends React.Component {
   }
 
   render = () => (
-    <View>
+    <View style={styles.View_1}>
       <Text>Sample text content</Text>
       <TextInput
         placeholder="Sample text input placeholder"
@@ -42,6 +42,7 @@ export default class Blank extends React.Component {
       <TextInput
         placeholder="Sample text input placeholder"
         multiline={true}
+        style={styles.TextInput_7}
         value={this.state.TextInput_7}
         onChangeText={nextValue => this.setState({ TextInput_7: nextValue })}
       />
@@ -64,10 +65,10 @@ export default class Blank extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  View_1: {},
+  View_1: { borderColor: "#000000" },
   Text_3: {},
   TextInput_5: {},
-  TextInput_7: {},
+  TextInput_7: { height: 100 },
   DateTimePicker_9: {},
   TextInput_11: {},
   Button_14: {}
